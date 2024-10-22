@@ -76,8 +76,8 @@ public class EvidenceChatekApp {
         System.out.print("Zadej číslo chatky: ");
         int cisloChatky = vstup.nextInt() - 1;
         System.out.print("Zadej kolik lidí chceš odebrat: ");
-        
         int pocetLidi = vstup.nextInt();
+        
         if (cisloChatky >= 0 && cisloChatky < POCET_CHATEK) {
             if (chatky[cisloChatky] - pocetLidi >= 0) {
                 chatky[cisloChatky] -= pocetLidi;
